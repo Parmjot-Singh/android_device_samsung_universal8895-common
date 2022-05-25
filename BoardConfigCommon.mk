@@ -156,3 +156,6 @@ TARGET_LD_SHIM_LIBS += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
+
+# Use local initramfs as halium-tools is broken rn
+BOARD_USE_LOCAL_INITRD := true
